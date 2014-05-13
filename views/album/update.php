@@ -7,8 +7,8 @@ use yii\helpers\Html;
  * @var app\models\Album $model
  */
 
-$this->title = 'Update Album: ' . ' ' . $model->name;
-$this->params['breadcrumbs'][] = ['label' => 'Albums', 'url' => ['index']];
+$this->title = 'Обновить альбом: ' . ' ' . $model->name;
+$this->params['breadcrumbs'][] = ['label' => 'Альбомы', 'url' => ['index']];
 $this->params['breadcrumbs'][] = ['label' => $model->name, 'url' => ['view', 'id' => $model->id]];
 $this->params['breadcrumbs'][] = 'Update';
 ?>

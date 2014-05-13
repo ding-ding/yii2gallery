@@ -8,7 +8,7 @@ use yii\grid\GridView;
  * @var yii\data\ActiveDataProvider $dataProvider
  */
 
-$this->title = 'Albums';
+$this->title = 'Альбомы';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="album-index">
@@ -16,7 +16,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <h1><?= Html::encode($this->title) ?></h1>
 
     <p>
-        <?= Html::a('Create Album', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Добавить новый альбом', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
 
     <?= GridView::widget([

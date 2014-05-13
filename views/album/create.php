@@ -7,8 +7,8 @@ use yii\helpers\Html;
  * @var app\models\Album $model
  */
 
-$this->title = 'Create Album';
-$this->params['breadcrumbs'][] = ['label' => 'Albums', 'url' => ['index']];
+$this->title = 'Создать новый альбом';
+$this->params['breadcrumbs'][] = ['label' => 'Альбомы', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="album-create">

@@ -8,6 +8,7 @@ use yii\data\ActiveDataProvider;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use yii\db\Exception;
 
 /**
  * AlbumController implements the CRUD actions for Album model.
@@ -60,13 +61,17 @@ class AlbumController extends Controller
      */
     public function actionCreate()
     {
-        $model = new Album;
+        $album = new Album;
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
+		if ($album->load(Yii::$app->request->post())) {
+			$album->create_date = new \yii\db\Expression('NOW()');
+		}
+		
+        if ($album->save()) {
+            return $this->redirect(['view', 'id' => $album->id]);
         } else {
             return $this->render('create', [
-                'model' => $model,
+                'model' => $album,
             ]);
         }
     }

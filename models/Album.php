@@ -50,14 +50,14 @@ class Album extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'name' => 'Name',
-            'description' => 'Description',
+            'name' => 'Название',
+            'description' => 'Описание',
             'email' => 'Email',
-            'phone' => 'Phone',
-            'create_date' => 'Create Date',
-            'change_date' => 'Change Date',
-            'last_upload' => 'Last Upload',
-            'number_of_photos' => 'Number Of Photos',
+            'phone' => 'Телефон',
+            'create_date' => 'Дата создания',
+            'change_date' => 'Дата изменения информации',
+            'last_upload' => 'Дата последней загрузки',
+            'number_of_photos' => 'Количество фотографий',
         ];
     }
 }
